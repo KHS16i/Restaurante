@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9192780E-8F4A-49D3-A700-FFC5086D2C94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Plantilla_Diseño_2</RootNamespace>
+    <AssemblyName>Plantilla-Diseño 2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pantallas\Administracion\frm_Crear_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Administracion\frm_Crear_Usuario.Designer.cs">
+      <DependentUpon>frm_Crear_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Administracion\frm_Nueva_Contrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Administracion\frm_Nueva_Contrasena.Designer.cs">
+      <DependentUpon>frm_Nueva_Contrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Administracion\frm_Recuperar_Contrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Administracion\frm_Recuperar_Contrasena.Designer.cs">
+      <DependentUpon>frm_Recuperar_Contrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cocina\frm_Cocina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cocina\frm_Cocina.designer.cs">
+      <DependentUpon>frm_Cocina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cocina\frm_Merma_Cocina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cocina\frm_Merma_Cocina.Designer.cs">
+      <DependentUpon>frm_Merma_Cocina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Administracion\frm_administracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Administracion\frm_administracion.Designer.cs">
+      <DependentUpon>frm_administracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Facturacion\Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Facturacion\Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Facturacion\frm_Facturacion_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Facturacion\frm_Facturacion_Main.Designer.cs">
+      <DependentUpon>frm_Facturacion_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Login\frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Login\frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Empleado_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Empleado_Editar.Designer.cs">
+      <DependentUpon>frm_Empleado_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Empleado_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Empleado_Nuevo.Designer.cs">
+      <DependentUpon>frm_Empleado_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Incapacidades_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Incapacidades_Editar.Designer.cs">
+      <DependentUpon>frm_Incapacidades_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Incapacidades_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Incapacidades_Nuevo.Designer.cs">
+      <DependentUpon>frm_Incapacidades_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_catProductos_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_catProductos_editar.Designer.cs">
+      <DependentUpon>frm_catProductos_editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menajes_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menajes_Editar.Designer.cs">
+      <DependentUpon>frm_Menajes_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menu_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menu_Editar.Designer.cs">
+      <DependentUpon>frm_Menu_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_MetodoPago_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_MetodoPago_Editar.Designer.cs">
+      <DependentUpon>frm_MetodoPago_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Platillo_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Platillo_Editar.Designer.cs">
+      <DependentUpon>frm_Platillo_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Platillo_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Platillo_Nuevo.Designer.cs">
+      <DependentUpon>frm_Platillo_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Producto_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Producto_Editar.Designer.cs">
+      <DependentUpon>frm_Producto_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Proveedor_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Proveedor_Editar.Designer.cs">
+      <DependentUpon>frm_Proveedor_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_TipoComanda_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_TipoComanda_Editar.Designer.cs">
+      <DependentUpon>frm_TipoComanda_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_TipoComanda_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_TipoComanda_Nuevo.Designer.cs">
+      <DependentUpon>frm_TipoComanda_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_MetodoPago_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_MetodoPago_Nuevo.Designer.cs">
+      <DependentUpon>frm_MetodoPago_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menu_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menu_Nuevo.Designer.cs">
+      <DependentUpon>frm_Menu_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menajes_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menajes_Nuevo.Designer.cs">
+      <DependentUpon>frm_Menajes_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_catProductos_nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_catProductos_nuevo.Designer.cs">
+      <DependentUpon>frm_catProductos_nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Proveedor_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Proveedor_Nuevo.Designer.cs">
+      <DependentUpon>frm_Proveedor_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Producto_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Producto_Nuevo.Designer.cs">
+      <DependentUpon>frm_Producto_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Puesto_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Puesto_Nuevo.Designer.cs">
+      <DependentUpon>frm_Puesto_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Puesto_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Puesto_Editar.Designer.cs">
+      <DependentUpon>frm_Puesto_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Serv_Profesionales_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Serv_Profesionales_Editar.Designer.cs">
+      <DependentUpon>frm_Serv_Profesionales_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Serv_Profesionales_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Serv_Profesionales_Nuevo.Designer.cs">
+      <DependentUpon>frm_Serv_Profesionales_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Vacaciones_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Vacaciones_Editar.Designer.cs">
+      <DependentUpon>frm_Vacaciones_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Vacaciones_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\NuevoEditar\frm_Vacaciones_Nuevo.Designer.cs">
+      <DependentUpon>frm_Vacaciones_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Salon\frm_Salon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Salon\frm_Salon.Designer.cs">
+      <DependentUpon>frm_Salon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Pantallas\Administracion\frm_Crear_Usuario.resx">
+      <DependentUpon>frm_Crear_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Administracion\frm_Nueva_Contrasena.resx">
+      <DependentUpon>frm_Nueva_Contrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Administracion\frm_Recuperar_Contrasena.resx">
+      <DependentUpon>frm_Recuperar_Contrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cocina\frm_Cocina.resx">
+      <DependentUpon>frm_Cocina.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cocina\frm_Merma_Cocina.resx">
+      <DependentUpon>frm_Merma_Cocina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Administracion\frm_administracion.resx">
+      <DependentUpon>frm_administracion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Facturacion\Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Facturacion\frm_Facturacion_Main.resx">
+      <DependentUpon>frm_Facturacion_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Login\frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Empleado_Editar.resx">
+      <DependentUpon>frm_Empleado_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Empleado_Nuevo.resx">
+      <DependentUpon>frm_Empleado_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Incapacidades_Editar.resx">
+      <DependentUpon>frm_Incapacidades_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Incapacidades_Nuevo.resx">
+      <DependentUpon>frm_Incapacidades_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_catProductos_editar.resx">
+      <DependentUpon>frm_catProductos_editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menajes_Editar.resx">
+      <DependentUpon>frm_Menajes_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menu_Editar.resx">
+      <DependentUpon>frm_Menu_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_MetodoPago_Editar.resx">
+      <DependentUpon>frm_MetodoPago_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Platillo_Editar.resx">
+      <DependentUpon>frm_Platillo_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Platillo_Nuevo.resx">
+      <DependentUpon>frm_Platillo_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Producto_Editar.resx">
+      <DependentUpon>frm_Producto_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Proveedor_Editar.resx">
+      <DependentUpon>frm_Proveedor_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_TipoComanda_Editar.resx">
+      <DependentUpon>frm_TipoComanda_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_TipoComanda_Nuevo.resx">
+      <DependentUpon>frm_TipoComanda_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_MetodoPago_Nuevo.resx">
+      <DependentUpon>frm_MetodoPago_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menu_Nuevo.resx">
+      <DependentUpon>frm_Menu_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Menajes_Nuevo.resx">
+      <DependentUpon>frm_Menajes_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_catProductos_nuevo.resx">
+      <DependentUpon>frm_catProductos_nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Proveedor_Nuevo.resx">
+      <DependentUpon>frm_Proveedor_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Producto_Nuevo.resx">
+      <DependentUpon>frm_Producto_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Puesto_Nuevo.resx">
+      <DependentUpon>frm_Puesto_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Puesto_Editar.resx">
+      <DependentUpon>frm_Puesto_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Serv_Profesionales_Editar.resx">
+      <DependentUpon>frm_Serv_Profesionales_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Serv_Profesionales_Nuevo.resx">
+      <DependentUpon>frm_Serv_Profesionales_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Vacaciones_Editar.resx">
+      <DependentUpon>frm_Vacaciones_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\NuevoEditar\frm_Vacaciones_Nuevo.resx">
+      <DependentUpon>frm_Vacaciones_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Salon\frm_Salon.resx">
+      <DependentUpon>frm_Salon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurant ico completo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mesa  No Disponible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mesa Disponible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha iz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha der.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocina ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventario ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log out ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurant ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salon ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguridad ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\email ico.png" />
+    <None Include="Resources\Mesa No Disponible.png" />
+    <Content Include="Resources\SQL\Query_Restaurante.sql" />
+    <Content Include="Resources\SQL\StoredProcedures\SP-FILTRAR-RESTAURANTE.sql" />
+    <Content Include="Resources\SQL\StoredProcedures\SP-MODIFICAR-RESTAURANTE.sql" />
+    <Content Include="Resources\SQL\StoredProcedures\SPS_AGREGAR.sql" />
+    <Content Include="Resources\SQL\StoredProcedures\SP_ELIMINAR_RESTAURANTE.sql" />
+    <Content Include="Resources\SQL\StoredProcedures\SP_LISTAR_RESTAURANTE.sql" />
+    <None Include="Resources\Restaurant ico1.png" />
+    <None Include="Resources\Mesa ico.png" />
+    <None Include="Resources\Fact Mesa ico.png" />
+    <Content Include="Resources\volver ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{8e834624-575c-4b63-9e5e-5e4bda88cfce}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{91f40dc7-a9d5-4a09-a7b4-331dd9219049}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
